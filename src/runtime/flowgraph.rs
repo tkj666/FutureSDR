@@ -107,8 +107,10 @@ pub struct BlockStreamPort {
 
 /// Block message port reference for type-erased message connections.
 pub struct BlockMessagePort {
-    pub(crate) block: BlockId,
-    pub(crate) port: PortId,
+    /// The block identifier for the message port.
+    pub block: BlockId,
+    /// The port identifier for the message port.
+    pub port: PortId,
 }
 
 /// Access stream ports for type-erased connections.
